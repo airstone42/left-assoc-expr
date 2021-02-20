@@ -24,6 +24,7 @@ main(Args) ->
 %% Internal functions
 %%====================================================================
 
+-spec parse_args(list()) -> list().
 parse_args(Args) ->
     [A | B] = Args,
     if A =:= ?S_EXP andalso B =/= [] ->
@@ -34,6 +35,7 @@ parse_args(Args) ->
             [hd(Args)]
     end.
 
+-spec expr(tuple() | list()) -> list().
 expr(X) when is_tuple(X) ->
     case element(1, X) of
         combine ->
@@ -51,6 +53,7 @@ expr(X) when is_tuple(X) ->
 expr(X) when is_list(X) ->
     X.
 
+-spec sexpr(tuple() | list()) -> list().
 sexpr(X) when is_tuple(X) ->
     case element(1, X) of
         combine ->
