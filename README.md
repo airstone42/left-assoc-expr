@@ -13,13 +13,13 @@ Example
 
 - Output
     1. (S(K))(K)
-    2. ((K(I))(S(K)))(SK)
-    3. (W(I))((B(S(I))(W(I)))
+    2. ((K(I))(S(K)))(S(K))
+    3. (W(I))((B(S(I)))(W(I)))
 
 - Output (S-expression)
     1. ((S K) K)
-    2. (((K I) (S K))(S K))
-    3. ((W I)((B (S I))(W I))
+    2. (((K I) (S K)) (S K))
+    3. ((W I) ((B (S I)) (W I)))
 
 Build
 -----
