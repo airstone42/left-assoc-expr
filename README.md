@@ -29,4 +29,8 @@ Build
 Run
 ---
 
-    $ _build/default/bin/left_assoc_expr
+    $ _build/default/bin/left_assoc_expr "WI(B(SI)(WI))"
+    (W(I))((B(S(I)))(W(I)))
+
+    $ _build/default/bin/left_assoc_expr "WI(B(SI)(WI))" -s
+    ((W I) ((B (S I)) (W I)))
